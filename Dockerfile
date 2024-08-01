@@ -8,7 +8,7 @@ ARG BUILD_DATE
 ARG RELEASE
 ARG VERSION
 
-ENV SERVER_VERSION=${RELEASE}
+ENV SERVER_VERSION=9.0.3
 ENV CLIENT_VERSION=8.5.3
 ENV WEBUI_VERSION=8.7.1
 
@@ -111,5 +111,5 @@ COPY docker-entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-EXPOSE 8080 1717
+EXPOSE $PORT
 CMD ["supervisord", "-c", "/app/supervisord.conf"]
