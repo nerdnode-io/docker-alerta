@@ -3,7 +3,7 @@ setup:
     - plan: heroku-postgresql
       as: DATABASE
   config:
-    DATABASE_URL: postgres://ufrgaio63h87n1:pffd0a4b27458a4483c5b965d079c042f80ce11ccbf01ff6ddd505398025421a6@cd1goc44htrmfn.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d43fnh4fntcmo3/monitoring
+    DATABASE_URL: postgres://ufrgaio63h87n1:pffd0a4b27458a4483c5b965d079c042f80ce11ccbf01ff6ddd505398025421a6@cd1goc44htrmfn.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/monitoring
     # AUTH_REQUIRED: True
     ADMIN_USERS: anthony@nerdnode.io,ben@nerdnode.io
     ADMIN_KEY: demo-key  # assigned to first user in ADMIN_USERS

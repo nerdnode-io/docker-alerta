@@ -111,5 +111,4 @@ COPY docker-entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-EXPOSE $PORT
 CMD ["supervisord", "-c", "/app/supervisord.conf"]
