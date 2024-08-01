@@ -9,6 +9,7 @@ setup:
     ADMIN_KEY: demo-key  # assigned to first user in ADMIN_USERS
     ADMIN_KEY_MAXAGE: 500
     CORS_ORIGINS: '*'
+    PLUGINS: remote_ip,reject,heartbeat,blackout,normalise,enhance
 build:
   docker:
     web: Dockerfile
