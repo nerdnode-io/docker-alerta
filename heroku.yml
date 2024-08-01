@@ -8,6 +8,7 @@ setup:
     ADMIN_USERS: anthony@nerdnode.io,ben@nerdnode.io
     ADMIN_KEY: demo-key  # assigned to first user in ADMIN_USERS
     ADMIN_KEY_MAXAGE: 500
+    CORS_ORIGINS: '*'
 build:
   docker:
     web: Dockerfile
